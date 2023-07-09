@@ -1,0 +1,43 @@
+$primary : #171E45;
+$secondary : #E85E04;
+$accent : #91CDE2;
+$accent2 : #F6C35D;
+
+@mixin primaryBtn {
+    border: 1px solid $secondary;
+    background-color: $secondary;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $accent2;
+        border-color: $accent2;
+        color: white;
+        cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 1rem;
+    }
+}
+
+@mixin btnOutline {
+    border: 1px solid $secondary;
+    background: none;
+    color: $secondary;
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+
+    &:hover {
+        background: hsl(44, 74%, 89%);
+        border-color: $accent2;
+        cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,33 @@
+#showcase {
+    height: 40em;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, $accent, white);
+    padding: 0 10%;
+
+    h1 {
+        font-size: 5em;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    span {
+        color: $secondary;
+    }
+
+    .showcaseBtn {
+        @include primaryBtn();
+    }
+
+    @media (max-width: 900px) {
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    }
+}

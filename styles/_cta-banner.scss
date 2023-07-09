@@ -1,0 +1,18 @@
+.cta-banner {
+    background: no-repeat url("/images/cta-banner.png");  
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    h2 {
+        color: white;
+    }
+
+    button {
+        @include primaryBtn;
+    }
+}

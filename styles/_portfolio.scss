@@ -1,0 +1,122 @@
+#portfolio {
+    margin: 1rem auto;
+    border-radius: .25rem;
+    overflow: hidden;
+
+    .portfolio-flex {
+        max-width: 70%;
+        margin: auto;
+        background: $accent;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        align-items: center;
+        box-shadow: 1px 0px 5px 0px  rgba(0,0,0,0.8);    
+    }
+
+    .portfolio-img {
+        overflow: hidden;
+        width: 100%;
+        height: 50vh;   
+    }
+
+    .portfolio-img > img {
+        width: 100%;
+        height: 100%;
+    }
+    .portfolio-body {
+        font-size: 1rem;
+        padding: 0 1rem;
+        flex-shrink: 2;
+    }
+
+    h2, p {
+        color: $primary;
+    }
+
+    .btn {
+        @include primaryBtn();
+    }
+
+    .btn-outline {
+        @include btnOutline();
+    }
+
+    @media (max-width: 1000px) {
+        .portfolio-flex {
+            flex-direction: column;
+            max-width: 80%;
+            padding-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {        
+        .portfolio-flex {
+            height: 60vh;
+        }
+    }
+
+}
+
+#portfolio2 {
+    margin: 1rem auto;
+    border-radius: .25rem;
+    overflow: hidden;
+
+    .portfolio2-flex {
+        max-width: 70%;
+        margin: auto;
+        background: $accent;
+        height: 50vh;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: stretch;
+        align-items: center;
+        box-shadow: 1px 0px 5px 0px  rgba(0,0,0,0.8); 
+    }
+
+    .portfolio-img {
+        overflow: hidden;
+        width: 100%;
+        height: 50vh; 
+    }
+
+    .portfolio-img > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .portfolio-body {
+        font-size: 1rem;
+        padding: 0 1rem;
+        flex-shrink: 2;
+    }
+
+    h2, p {
+        color: $primary;
+    }
+
+    .btn {
+        @include primaryBtn();
+    }
+
+    .btn-outline {
+        @include btnOutline();
+    }
+
+    @media (max-width: 1000px) {
+        .portfolio2-flex {
+            flex-direction: column;
+            max-width: 80%;
+            padding-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {        
+        .portfolio2-flex {
+            height: 60vh;
+        }
+    }
+
+}
